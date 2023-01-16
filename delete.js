@@ -43,9 +43,13 @@ when we call filter method we have to modify const to let that certain array. Be
 /* 
 ## Array reset
 To zero the certain array length.
-                const numbers2 = numbers;
-                numbers.length = 0;
+            Rule: 1     const numbers2 = numbers;
+                        numbers.length = 0;
+                        
+            Rule: 2     while (numbers.length) {
+                        numbers.pop();
+}
 */
 
-console.log(numbers2 === numbers);
+// console.log(numbers2 === numbers);
 console.log(numbers);
